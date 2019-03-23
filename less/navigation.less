@@ -16,10 +16,19 @@
         .flexProp;
         .parentProp(row; center; center);
 
+        @media @phone {
+            justify-content: space-around;
+            padding: 0 4rem 0 4rem;
+        }
+
         li {
             padding: 0 1rem 0 1rem;
             font-size: 1.8rem;
-            font-weight: bold;
+            .fontBold;
+
+            @media @phone {
+                font-size: 1.5rem;
+            }
         }
     }
 }
