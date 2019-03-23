@@ -23,14 +23,16 @@ align-self: @alignSelf;
 }
 
 //styling button with hover built in
-.buttonStyle(@height; @weight; @backgroundColor; @color) {
+.buttonStyle(@height; @width; @backgroundColor; @color; @radius) {
 	height: @height;
-	weight: @weight;
+	width: @width;
 	background-color: @backgroundColor;
-	color: @color;
+    color: @color;
+    border-radius: @radius;
 
 	&:hover {
 		color: @btn-bg-color;
-		background-color: @btn-color;
+        background-color: @btn-color;
+        cursor: pointer;
     }
 }
