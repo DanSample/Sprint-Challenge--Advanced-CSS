@@ -1,1 +1,25 @@
 // Navigation code here
+.navBar {
+    .flexProp;
+    .parentProp(column; space-between; center);
+    background-color: @nav-bg;
+    font-size: 2rem;
+    padding-top: 2rem;
+
+    h2 {
+        font-size: 4rem;
+    }
+
+    ul {
+        height: 5rem;
+        width: 100%;
+        .flexProp;
+        .parentProp(row; center; center);
+
+        li {
+            padding: 0 1rem 0 1rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+    }
+}
