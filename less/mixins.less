@@ -1,1 +1,51 @@
 // Mixins Here
+.flexProp {
+	display: -webkit-box;  
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+// width for images
+.setWidth {
+	max-width: 100%;
+    width: 90%;
+    margin: 1.5rem auto;
+}
+// width and height for btn
+.setBtnWidth {
+	max-width: 100%;
+    width: 100%;
+    margin: 1.5rem auto;
+    height: 7rem;
+} 
+
+// set fonts to bold
+.fontBold {
+    font-weight: bold;
+}
+
+//Parametric mixins
+.parentProp(@direction; @justify; @align) {
+    flex-direction: @direction;
+	justify-content: @justify;
+	align-items: @align;
+}
+
+
+//styling button with hover built in
+.buttonStyle(@height; @width; @backgroundColor; @color; @radius) {
+	height: @height;
+	width: @width;
+	background-color: @backgroundColor;
+    color: @color;
+    border-radius: @radius;
+
+	&:hover {
+		color: @btn-bg-color;
+        background-color: @btn-color;
+        cursor: pointer;
+    }
+}
+
+
